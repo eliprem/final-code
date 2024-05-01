@@ -23,7 +23,13 @@ const router = createBrowserRouter([
     children: [
       {
         path:"media/:id",
-        element: <Media />,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
+        element: <Media _id={''} title={''} rating={0} type={''} review={''} imgUrl={''} onDelete={function (string: any): void {
+          throw new Error('Function not implemented.');
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } } onEdit={function (updatedMedia: unknown): void {
+          throw new Error('Function not implemented.');
+        } } />,
       },
     ],
   },
