@@ -1,0 +1,20 @@
+meta {
+  name: editMedia
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8000/api/media/662d84e6741613442aba2e0f
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "rating": 5,
+    "type": "Book",
+    "review": "best book I read EVER!"
+  }
+}
